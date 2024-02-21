@@ -1,0 +1,111 @@
+.section--box-event {
+    .content {
+        padding: 1.5625rem 3.75rem;
+        overflow: hidden;
+        border-radius: 25px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        position: relative;
+        align-items: center;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            padding: 1.5625rem 1.5rem;
+        }
+
+        .logo {
+            width: 203px;
+            margin-right: 2.75rem;
+            @include media-breakpoint-down(md) {
+                width: 45%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.875rem;
+            }
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .info {
+            width: 36%;
+
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+
+            figure {
+                margin: 0;
+                position: relative;
+                width: 274px;
+
+                @include media-breakpoint-down(md) {
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 1.875rem;
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    height: 100%;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 40%;
+                    height: 5px;
+                    background-color: $secondary;
+                    right: 6px;
+                    bottom: 22px;
+                }
+            }
+
+            p {
+                color: $white;
+                margin-bottom: 0;
+            }
+        }
+
+        .icon-event {
+            margin-left: auto;
+            margin-right: 129px;
+
+            i {
+                font-size: 80px;
+                color: white;
+                font-weight: bolder;
+                @include media-breakpoint-down(md) {
+                    font-size: 45px;
+                }
+            }
+        }
+
+        &::before {
+            content: "";
+            background-image: url('../../../build/img/mapa-event.svg');
+            position: absolute;
+            width: 235px;
+            height: 100%;
+            right: 44px;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            pointer-events: none;
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+}

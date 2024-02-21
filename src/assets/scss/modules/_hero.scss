@@ -1,0 +1,41 @@
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 217px);
+    display: flex;
+    align-items: center;
+    min-height: 529px;
+    position:relative;
+    @include media-breakpoint-down(lg) {
+        height: auto;
+    }
+    @include media-breakpoint-down(md) {
+        min-height: 400px;
+    }
+
+    &__box-banner {
+        padding: 3rem;
+        width: 53%;
+        background-color: $primary-70;
+        border-radius: 10px;
+        border: solid 1px $white;
+        z-index: 1;
+        position: relative;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+        h1{
+            margin-bottom: 0.75rem;
+        }
+    }
+    &::before{
+        content:'';
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        bottom:0;
+        background: linear-gradient(356.39deg, rgba(0, 0, 0, 0.4) 13.14%, rgba(0, 0, 0, 0) 80.48%);
+        z-index: 0;
+
+    }
+}

@@ -1,0 +1,214 @@
+html {
+  font-size: 16px;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1rem;
+  font-family: $Archivo-r;
+  font-weight: normal;
+  font-style: normal;
+  max-width: 100%;
+  color: $black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: transparent;
+  transition: all 0.3s;
+  main{
+    section {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+
+}
+
+h1 {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+  font-family: $Archivo-b;
+
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-family: $Archivo-b;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: $white;
+  transition: $transition;
+  display: inline-block;
+  text-decoration: none;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 0.8rem;
+  }
+
+  &,
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: $Archivo-l;
+
+  strong {
+    font-family: $Archivo-b;
+  }
+
+  &.big {
+    font-size: 1.25rem;
+  }
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-bottom: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.container {
+
+  @media only screen and (min-width: 1440px) and (max-width: 1620px) {
+    max-width: 1128px;
+  }
+
+}
+
+select,
+button,
+input {
+  appearance: none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    outline: none !important;
+    box-shadow: unset !important;
+  }
+}
+
+button,
+button:focus {
+  background: transparent;
+  outline: none !important;
+}
+
+form {
+  input {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    border: 9px solid white;
+    background-clip: border-box;
+    border-radius: 50%;
+    appearance: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: white;
+    cursor: pointer;
+
+    &:checked {
+      background-color: #1077cb;
+    }
+  }
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  .slider-dots {
+    .slick-dots {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      justify-content: center;
+
+      li {
+        width: 13px;
+        height: 13px;
+
+        button {
+          width: 13px;
+          height: 13px;
+          background: transparent;
+          border: 1px solid #FFFFFF;
+          border-radius: 50%;
+          opacity: 1;
+          outline: 0;
+          margin: 0 10px 0 0;
+          display: inline-block;
+          line-height: 0;
+          text-indent: -1000em;
+          transition: all 0.3s;
+          padding: 0;
+        }
+
+        &.slick-active {
+          button {
+            background: white;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+	"attr-req-value": "true",
+	"id-class-style": "dash",
+	"tag-bans": ["b"],
+	"attr-bans": ["dynsrc", "lowsrc", "onclick", "onload", "ondblclick"]
+}

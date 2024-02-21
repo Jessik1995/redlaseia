@@ -1,0 +1,150 @@
+body {
+    &.contrast {
+        background-color: #181818;
+        color: $white;
+
+        .header {
+            .navbar {
+                &__countries {
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link{
+                                color:$white;
+                            }
+                        }
+                    }
+                }
+                &__primary {
+                    .nav-item {
+                        button{
+                            border-color: $white;
+                            color:$white;
+                            i{
+                                color:$white;
+                            }
+                        }
+                    }
+                    .navbar-toggler{
+                        color: white;
+                    }
+                    .navbar-collapse {
+                        .navbar-nav {
+                            .nav-item {
+                                button{
+                                    border-color: $white;
+                                    color:$white;
+                                    i{
+                                        color:$white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    form {
+                        button {
+                            i {
+                                color: $white;
+                            }
+                        }
+                        .form-control {
+                            border-color:#313337;
+                            color: $white;
+                            background-color: #313337;
+    
+                            &::placeholder {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hero{
+            &__box-banner{
+                color:$black;
+                h1, p{
+                    color:$black;
+                }
+            }
+        }
+        .card{
+            box-shadow: 0px 1.8860000371932983px 3.7720000743865967px 1.4140000343322754px #0D0D0D26;
+            background-color: #1F2227;
+            .text{
+                color: $white;
+                h3, p{
+                    color: $white;
+                }
+            }
+        }
+        .btn--text-icon{
+            color: $secondary;
+        }
+        .bg-secondary-10{
+            background-color: #1F2227 !important;
+        }
+        .nav-tabs {
+            .nav-item{
+                .nav-link{
+                    background: transparent;
+                    color: $secondary;
+                }
+    
+            }
+        }
+        .section--contact{
+            &::before{
+                background: linear-gradient(180deg, #181818 30.97%, rgba(24, 24, 24, 0.34) 101.63%);
+            }
+        }
+        .accordion{
+            .accordion-item{
+                .accordion-button{
+                    background-color: #1F2227;
+                    color: $white;
+                    border-color:#1F2227;
+                    border-bottom: solid 1px #B3B3B3;
+                }
+            }
+            .accordion-collapse{
+                background-color: #1F2227;
+            }
+            .accordion-body{
+                background-color: #313337;
+                color: $white;
+                border-color:#1F2227;
+            }
+        }
+
+        form{
+            background-color:  #1F2227;
+            label{
+            }
+            input{
+                background-color: $black;
+                color:$white;
+                border-color:$black;
+                &::placeholder{
+                    color:$white;
+                }
+            }
+            textarea{
+                background-color: $black;
+                color:$white;
+                border-color:#C6C6C6;
+                &::placeholder{
+                    color:$white;
+                }
+            }
+        }
+        .alert{
+            background-color:  #1F2227;
+            .privacy{
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
+
+}

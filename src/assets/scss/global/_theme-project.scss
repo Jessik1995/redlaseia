@@ -1,0 +1,42 @@
+
+// Colors
+$primary: #016447;
+$primary-active: #01533B;
+$primary-buttons:#33511A;
+$primary-text:#456D24;
+$primary-70: rgba(196, 220, 145, 0.7);
+$secondary: #A0C750;
+$secondary-10:rgba(244, 248, 234, 1);
+$secondary-15:rgba(226, 238, 202, 1);
+
+$tertiary: #002fa7;
+
+$black: #1C1C1C;
+$white: #ffffff;
+
+$live:#C3383D;
+
+$gray:#B3B3B3;
+
+$theme-colors: (
+	'primary': $primary,
+    'secondary': $secondary,
+    'secondary-10': $secondary-10
+);
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+// transitions
+$transition: all 0.3s ease 0s;
+
+$Archivo-l: 'Archivo-Light';
+$Archivo-r: 'Archivo-Regular';
+$Archivo-m: 'Archivo-Medium';
+$Archivo-b: 'Archivo-Bold';
+$Archivo-bl: 'Archivo-Black';

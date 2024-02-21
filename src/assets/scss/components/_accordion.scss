@@ -1,0 +1,65 @@
+.accordion {
+    .accordion-item {
+        border: unset;
+
+        .accordion-button {
+            padding: 1rem 1.5rem;
+            border: 1px solid #EAEAEA;
+            background-color: $white;
+            color: $black;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            font-family: $Archivo-r;
+            border-bottom: 1px solid rgba(179, 179, 179, 1);
+            box-shadow: 0px 0.4px 1.4px 0.4px rgba(0, 0, 0, 0.15);
+            border-radius: 0;
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                align-items: baseline;
+
+                &::after {
+                    top: 0;
+                    bottom: 0;
+                    position: absolute;
+                    right: 14px;
+                    margin: auto;
+                    background-size: 14px;
+                }
+            }
+
+            span {
+                padding-right: 10px;
+                font-family: $Archivo-r;
+            }
+
+            &.collapsed {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            &:first-child {
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+            }
+        }
+
+        .accordion-collapse {
+            border: 1px solid #EAEAEA;
+            border-top: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    .accordion-body {
+        padding: 0.5rem 1.5rem;
+        background-color: $secondary-15;
+
+        p {
+            font-family: $Archivo-r;
+            line-height: 28px;
+            font-size:1.1875rem;
+        }
+    }
+}

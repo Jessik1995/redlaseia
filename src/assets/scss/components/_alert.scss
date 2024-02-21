@@ -1,0 +1,48 @@
+.alert{
+    background-color:#CFE3A8;
+    padding: 2.5625rem 5rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    transition: all 0.3s;
+    transform: translatey(0);
+    opacity: 1;
+    max-height: 500px;
+    margin: 0;
+    display: flex;
+    gap:1.5rem;
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+    }
+    @include media-breakpoint-down(md) {
+        max-height: max-content;
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap:0.75rem;
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            .btn{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+    &.ocult{
+        transform: translatey(118%);
+        opacity: 0;
+        overflow: hidden;
+        max-height: 0;
+        padding: 0;
+        height: 0;
+    }
+    .privacy{
+        .btn{
+            font-family: $Archivo-m;
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.card {
+    border: unset;
+    background: transparent;
+    box-shadow: 0px 1px 3px 1px #456D2426;
+    border-radius: 25px;
+    overflow: hidden;
+
+    &--news {
+        figure {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 196px;
+            margin-bottom: 0;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                transition: all .3s;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #0000003b;
+                right: 0;
+                left: 0;
+                margin: auto;
+
+            }
+        }
+
+        .text {
+            position: relative;
+            padding: 1.25rem 1.5rem;
+
+            h3 {
+                color: $black;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+
+        .btn {
+            i {
+                transition: all .3s;
+            }
+        }
+
+        &:hover {
+            .btn {
+                i {
+                    margin-left: 1rem;
+                }
+            }
+
+            figure {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    &--events {
+        padding: 1.3rem;
+        transform: translateY(0);
+        transition: all .3s;
+
+        .tag {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-family: $Archivo-m;
+        }
+
+        .date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            i {
+                color: $primary;
+            }
+
+            p {
+                margin-bottom: 0;
+                font-size: 1rem;
+                font-family: $Archivo-r;
+            }
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 15px 0px #456d243d;
+        }
+    }
+
+    &--audios {
+        figure {
+            &::before {
+                content: "\e050";
+                font-family: 'Material Symbols Outlined';
+                position: absolute;
+                font-size: 46px;
+                z-index: 1;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                color: white;
+                margin: auto;
+                width: 62px;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &--videos {
+        figure {
+            &::before {
+                content: "\e1c4";
+            }
+        }
+
+        .text {
+            h3 {
+                color: $primary-text;
+                font-family: $Archivo-m;
+            }
+        }
+    }
+
+    &--documents {
+        &__header {
+            min-height: 197px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+                transform: scale(1);
+                transition: all .3s;
+            }
+
+            .text {
+                padding: 1.125rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .tag {
+                    margin-bottom: 0.375rem;
+                }
+
+                p {
+                    color: $white;
+                    font-family: $Archivo-bl;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+                    line-height: 28px;
+                }
+            }
+        }
+
+        .text {
+            position: relative;
+            padding: 1.25rem 1.5rem;
+
+            h3 {
+                color: $primary-text;
+                font-family: $Archivo-m;
+                margin-bottom: 0.5rem;
+            }
+
+            .btn {
+                color: $primary-text;
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+    &--objetives{
+        padding: 1.5rem;
+        figure{
+            height:122px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .text{
+            h3{
+                color: $primary-text;
+                margin-bottom:0.5rem;
+            }
+        }
+    }
+
+
+}

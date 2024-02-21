@@ -1,0 +1,29 @@
+// bootstrap custom theme
+@import "global/theme-project";
+
+// bootstap
+@import 'node_modules/bootstrap/scss/bootstrap';
+// Plugins
+@import 'node_modules/aos/src/sass/aos';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+
+//global
+@import "global/global";
+@import "global/global-contrast";
+@import "global/fonts";
+
+
+// custom components
+@import "components/footer";
+@import "components/header";
+@import "components/buttons";
+@import "components/tabs";
+@import "components/cards";
+@import "components/accordion";
+@import "components/modal";
+@import "components/alert";
+@import "components/box";
+
+
+@import "modules/hero";
+@import "modules/sections";
